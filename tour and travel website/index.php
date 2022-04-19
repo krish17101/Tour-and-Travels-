@@ -15,6 +15,16 @@
   
 
 </head>
+<style>
+    header .icon i{
+        font-size: 2.5rem;
+        color:#363131;   
+        cursor: pointer;
+        margin-right: 1rem;
+}
+
+</style>
+
 <body>
   
     
@@ -36,38 +46,19 @@
         <a href="#contact">contact</a>
     </nav>
    
-    <div class="icons">
+    <div class="icon">
         <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn">login</i>
+        <i class="fas fa-user" id="login-btn"></i>
         
     </div>
 
-    <form action="" class="search-bar-container">
-        <input type="search" id="search-bar" placeholder="search here...">
-        <label for="search-bar" class="fas fa-search"></label>
-    </form>
 
 </header>
 
-<!-- header section ends -->
-
-<!-- login form container  -->
-
 <div class="login-form-container">
 
-    <i class="fas fa-times" id="form-close"></i>
-
-    <form action="">
-        <h3>login</h3>
-        <input type="email" class="box" placeholder="enter your email">
-        <input type="password" class="box" placeholder="enter your password">
-        <input type="submit" value="login now" class="btn">
-        <input type="checkbox" id="remember">
-        <label for="remember">remember me</label>
-        <p>forget password? <a href="#">click here</a></p>
-        <p>don't have and account? <a href="registration.php">register now</a></p>
-    </form>
-
+<i class="fas fa-times" id="form-close"></i>
+    
 </div>
 
 
@@ -96,8 +87,6 @@
 </section>
 
 <!-- home section ends -->
-
-
 
 
 
@@ -175,7 +164,7 @@
             <img src="images/g-1.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <p>There are so many amazing places around the globe to see.</p>
                 <a href="#" class="btn">see more</a>
             </div>
         </div>
@@ -191,7 +180,7 @@
             <img src="images/g-3.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <p>There are so many amazing places around the globe to see.</p>
                 <a href="#" class="btn">see more</a>
             </div>
         </div>
@@ -199,7 +188,7 @@
             <img src="images/g-4.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <p>There are so many amazing places around the globe to see.</p>
                 <a href="#" class="btn">see more</a>
             </div>
         </div>
@@ -207,7 +196,7 @@
             <img src="images/g-5.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <p>There are so many amazing places around the globe to see.</p>
                 <a href="#" class="btn">see more</a>
             </div>
         </div>
@@ -215,7 +204,7 @@
             <img src="images/g-6.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <p>There are so many amazing places around the globe to see.</p>
                 <a href="#" class="btn">see more</a>
             </div>
         </div>
@@ -223,7 +212,7 @@
             <img src="images/g-7.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <p>There are so many amazing places around the globe to see.</p>
                 <a href="#" class="btn">see more</a>
             </div>
         </div>
@@ -231,7 +220,7 @@
             <img src="images/g-8.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <p>There are so many amazing places around the globe to see.</p>
                 <a href="#" class="btn">see more</a>
             </div>
         </div>
@@ -239,7 +228,7 @@
             <img src="images/g-9.jpg" alt="">
             <div class="content">
                 <h3>amazing places</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, tenetur.</p>
+                <p>There are so many amazing places around the globe to see.</p>
                 <a href="#" class="btn">see more</a>
             </div>
         </div>
@@ -298,7 +287,7 @@
             <div class="swiper-slide">
                 <div class="box">
                     <img src="images/pic3.png" alt="">
-                    <h3>Divya</h3>
+                    <h3>Diksha</h3>
                     <p>Stayed in 6 excellent resorts, which lived up to their descriptions. Holiday lived up to our expectations - wildlife, coast, countryside, culture, history, excellent food, friendly peopleThe perfect combination- lone travelling , excellent organisation.</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -352,17 +341,17 @@
             <img src="images/contact-img.svg" alt="">
         </div>
 
-        <form action="">
+        <form action="contact.php" method="post">
             <div class="inputBox">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="email">
+                <input type="text" placeholder="name" name="Name" required>
+                <input type="email" placeholder="email" name="email"required >
             </div>
             <div class="inputBox">
-                <input type="number" placeholder="number">
-                <input type="text" placeholder="subject">
+                <input type="number" placeholder="number" name="number" required>
+                <input type="text" placeholder="subject" name="subject" required>
             </div>
-            <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" class="btn" value="send message">
+            <textarea placeholder="message" name="massage" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message" name="send">
         </form>
 
     </div>
@@ -430,7 +419,7 @@
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
